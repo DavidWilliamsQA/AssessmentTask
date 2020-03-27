@@ -136,7 +136,24 @@ public class OfflineExercises {
 	// superBlock("") returns 0
 
 	public int superBlock(String input) {
-		return -1;
+		char[] toArray = input.toCharArray();
+		int counter = 0;
+		int maxCounter = 0;
+
+		for (int i = 0; i < toArray.length; i++) {
+			if (i == 0) {
+				continue;
+			} else {
+				if (toArray[i] == toArray[i - 1]) {
+					counter++;
+				}
+			}
+
+		}
+
+		System.out.println(input);
+		System.out.println(counter);
+		return counter;
 
 	}
 
@@ -150,7 +167,15 @@ public class OfflineExercises {
 	// amISearch("I have been in Amsterdam") returns 0
 
 	public int amISearch(String arg1) {
-		return 0;
+		String convert = arg1.toLowerCase();
+		int amCounter = 0;
+
+		if (convert.contains("am")) {
+			amCounter++;
+
+		}
+
+		return amCounter;
 
 	}
 
@@ -192,6 +217,19 @@ public class OfflineExercises {
 	// largest("555 72 86 45 10") returns 15
 
 	public int largest(String arg1) {
+//		int tenth = number / 10;
+//		int unit = number - (tenth * 10);
+//		int addition = unit + tenth;
+//		int largetSum = 0;
+//
+//		char[] toArray = arg1.toCharArray();
+//
+//		for (int i = 0; i < toArray.length; i++) {
+//			System.out.println(toArray[i]);
+//		}
+//
+//		System.out.println(toArray);
+
 		return 0;
 
 	}
